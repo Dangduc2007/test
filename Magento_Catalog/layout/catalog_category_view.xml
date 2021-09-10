@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <attribute name="class" value="your-class"/>
+        <referenceContainer name="main.content">
+            <container name="some.container" as="someContainer" label="Some Container" htmlTag="div" htmlClass="some-container" >
+                <block class="Magento\Cms\Block\Block" name="block.test">
+
+                    <arguments>
+
+                        <argument name="block_id" xsi:type="string">block_test</argument>
+
+                    </arguments>
+
+                </block>
+            </container>
+        </referenceContainer>
+    </body>
+</page>
